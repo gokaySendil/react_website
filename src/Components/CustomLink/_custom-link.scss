@@ -1,0 +1,31 @@
+@import "../variables";
+.list-item {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  animation: opacityIncrease 0.5s;
+  animation-timing-function: linear;
+  transition: transform 0.3s ease-in;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $base-red;
+    &:hover {
+      padding-bottom: 12px;
+      border-bottom: 3px solid $base-white;
+      border-top: 3px solid $base-white;
+      color: #ea1538;
+    }
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+  @keyframes opacityIncrease {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
