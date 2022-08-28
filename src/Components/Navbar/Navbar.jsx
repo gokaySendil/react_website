@@ -9,6 +9,10 @@ const Navbar = () => {
   const handleClick = () => {
     setClick(!click);
   };
+  const closeMobileMenu = () => {
+    console.log("Clicked");
+    setClick(false);
+  };
   return (
     <div className="header">
       <nav className="navbar">
@@ -25,9 +29,17 @@ const Navbar = () => {
           )}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <CustomLink name="Home " id="/"></CustomLink>
-          <CustomLink name="Story" id="story"></CustomLink>
-          <CustomLink name="Characters " id="characters"></CustomLink>
+          <CustomLink click={closeMobileMenu} name="Home " id="/"></CustomLink>
+          <CustomLink
+            click={closeMobileMenu}
+            name="Story"
+            id="#story"
+          ></CustomLink>
+          <CustomLink
+            click={closeMobileMenu}
+            name="Characters"
+            id="characters"
+          ></CustomLink>
         </ul>
       </nav>
     </div>

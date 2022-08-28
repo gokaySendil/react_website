@@ -1,7 +1,7 @@
 import React from "react";
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <div className="content">
         <h2>ARIFURETA SHOKUGYOU</h2>
         <h3>DE</h3>

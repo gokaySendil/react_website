@@ -2,16 +2,14 @@ import React from "react";
 import "./main.scss";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Sections/Hero/Hero";
+import Story from "./Components/Sections/Story/Story";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <section id="home" className="home-section"></section>
-      <section id="story" className="story-section"></section>
-      <section id="characters" className="characters-section"></section>
-      <footer className="footer"></footer>
+      <Story />
     </div>
   );
 }
