@@ -38,7 +38,7 @@ const Navbar = () => {
           <CustomLink
             click={closeMobileMenu}
             name="Characters"
-            id="characters"
+            id="#characters"
           ></CustomLink>
         </ul>
       </nav>
