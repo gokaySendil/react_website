@@ -44,6 +44,10 @@
     align-self: center;
     cursor: pointer;
     transition-duration: 0.4s;
+    a {
+      text-decoration: none;
+      color: $base-red;
+    }
     &:hover {
       transform: scale(1.5);
       border-color: $base-color;

@@ -73,6 +73,9 @@
       display: block;
       color: black;
     }
+    h2 {
+      margin-bottom: 15px;
+    }
     .story-blocks {
       display: flex;
       flex-direction: row;
@@ -95,6 +98,9 @@
         p {
           font-size: 14px;
           color: $base-white;
+          font-style: italic;
+          align-self: center;
+          margin: auto;
         }
 
         button {
