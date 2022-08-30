@@ -1,6 +1,12 @@
 import React from "react";
 
-const Story = () => {
+const Story = ({ click }) => {
+  const button_click1 = (event) => {
+    click("ehr5-hVjEqQ");
+  };
+  const button_click2 = (event) => {
+    click("4_8CHy3suRA");
+  };
   return (
     <div id="story" className="story-section">
       <h1>STORY</h1>
@@ -17,7 +23,7 @@ const Story = () => {
             separated from his group, Hajime must discover his own talents or be
             left to rot in this world forever.
           </p>
-          <button>Watch Season1 Trailer</button>
+          <button onClick={button_click1}>Watch Season1 Trailer</button>
         </div>
         <div className="story-content">
           <h2>Season 2</h2>
@@ -29,7 +35,7 @@ const Story = () => {
             Erisen to escort Myuu and her mother. He'll fight and defeat anyone
             he has to in order to find a way home—including a god!
           </p>
-          <button>Watch Season2 Trailer</button>
+          <button onClick={button_click2}>Watch Season2 Trailer</button>
         </div>
       </div>
     </div>
