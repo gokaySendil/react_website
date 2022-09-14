@@ -14,7 +14,6 @@ This is  react js project that includes a landing page with several sections.
 
 ```bash
   npm init
-  cd ./to-do/
   npm start
 ```
 ## Used Packages
